@@ -1,0 +1,114 @@
+
+%=========== File containing some new commands ============%
+%                                                          %
+% Copyright (C) ISI - All Rights Reserved                  %
+% Proprietary                                              %
+% Written by Med Hossam <med.hossam@gmail.com>, April 2016 %
+%                                                          %
+% @author: HEDHILI Med Houssemeddine                       %
+% @linkedin: http://tn.linkedin.com/in/medhossam           %
+%==========================================================%
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+}%
+\item[]}
+{\end{list}}
+
+\makeatletter
+
+%================= front cover variables =================%
+
+\newcommand{\secondAuthor}[1]{\gdef\@secondAuthor{#1}}%
+\newcommand{\@secondAuthor}{\@latex@warning@no@line{No \noexpand\secondAuthor given}}
+
+\newcommand{\diplomaName}[1]{\gdef\@diplomaName{#1}}%
+\newcommand{\@diplomaName}{\@latex@warning@no@line{No \noexpand\diplomaName given}}
+
+\newcommand{\speciality}[1]{\gdef\@speciality{#1}}%
+\newcommand{\@speciality}{\@latex@warning@no@line{No \noexpand\speciality given}}
+
+\newcommand{\proFramerName}[1]{\gdef\@proFramerName{#1}}%
+\newcommand{\@proFramerName}{\@latex@warning@no@line{No \noexpand\proFramerName given}}
+
+\newcommand{\proFramerSpeciality}[1]{\gdef\@proFramerSpeciality{#1}}%
+\newcommand{\@proFramerSpeciality}{\@latex@warning@no@line{No \noexpand\proFramerSpeciality given}}
+
+\newcommand{\academicFramerName}[1]{\gdef\@academicFramerName{#1}}%
+\newcommand{\@academicFramerName}{\@latex@warning@no@line{No \noexpand\academicFramerName given}}
+
+\newcommand{\academicFramerSpeciality}[1]{\gdef\@academicFramerSpeciality{#1}}%
+\newcommand{\@academicFramerSpeciality}{\@latex@warning@no@line{No \noexpand\academicFramerSpeciality given}}
+
+\newcommand{\collegeYear}[1]{\gdef\@collegeYear{#1}}%
+\newcommand{\@collegeYear}{\@latex@warning@no@line{No \noexpand\collegeYear given}}
+
+\newcommand{\companyName}[1]{\gdef\@companyName{#1}}%
+\newcommand{\@companyName}{\@latex@warning@no@line{No \noexpand\companyName given}}
+
+%================== Signatures variables ==================%
+
+\newcommand{\proSignSentence}[1]{\gdef\@proSignSentence{#1}}%
+\newcommand{\@proSignSentence}{\@latex@warning@no@line{No \noexpand\proSignSentence given}}
+
+\newcommand{\academicSignSentence}[1]{\gdef\@academicSignSentence{#1}}%
+\newcommand{\@academicSignSentence}{\@latex@warning@no@line{No \noexpand\academicSignSentence given}}
+
+%================== Backcover variables ==================%
+
+\newcommand{\arabicAbstract}[1]{\gdef\@arabicAbstract{#1}}%
+\newcommand{\@arabicAbstract}{\@latex@warning@no@line{No \noexpand\arabicAbstract given}}
+
+\newcommand{\arabicAbstractKeywords}[1]{\gdef\@arabicAbstractKeywords{#1}}%
+\newcommand{\@arabicAbstractKeywords}{\@latex@warning@no@line{No \noexpand\arabicAbstractKeywords given}}
+
+\newcommand{\frenchAbstract}[1]{\gdef\@frenchAbstract{#1}}%
+\newcommand{\@frenchAbstract}{\@latex@warning@no@line{No \noexpand\frenchAbstract given}}
+
+\newcommand{\frenchAbstractKeywords}[1]{\gdef\@frenchAbstractKeywords{#1}}%
+\newcommand{\@frenchAbstractKeywords}{\@latex@warning@no@line{No \noexpand\frenchAbstractKeywords given}}
+
+\newcommand{\englishAbstract}[1]{\gdef\@englishAbstract{#1}}%
+\newcommand{\@englishAbstract}{\@latex@warning@no@line{No \noexpand\englishAbstract given}}
+
+\newcommand{\englishAbstractKeywords}[1]{\gdef\@englishAbstractKeywords{#1}}%
+\newcommand{\@englishAbstractKeywords}{\@latex@warning@no@line{No \noexpand\englishAbstractKeywords given}}
+
+\newcommand{\companyEmail}[1]{\gdef\@companyEmail{#1}}%
+\newcommand{\@companyEmail}{\@latex@warning@no@line{No \noexpand\companyEmail given}}
+
+\newcommand{\companyTel}[1]{\gdef\@companyTel{#1}}%
+\newcommand{\@companyTel}{\@latex@warning@no@line{No \noexpand\companyTel given}}
+
+\newcommand{\companyFax}[1]{\gdef\@companyFax{#1}}%
+\newcommand{\@companyFax}{\@latex@warning@no@line{No \noexpand\companyFax given}}
+
+\newcommand{\companyAddressFR}[1]{\gdef\@companyAddressFR{#1}}%
+\newcommand{\@companyAddressFR}{\@latex@warning@no@line{No \noexpand\companyAddressFR given}}
+
+\newcommand{\companyAddressAR}[1]{\gdef\@companyAddressAR{#1}}%
+\newcommand{\@companyAddressAR}{\@latex@warning@no@line{No \noexpand\companyAddressAR given}}
+
+%============= cmd for inserting blank page =============%
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+%================ document main language ================%
+%\selectlanguage{english}
+\selectlanguage{french}
+
+%================== required packages ===================%
+
+\usepackage{tcolorbox}
+\usepackage{afterpage}
+\usepackage{array,longtable,multirow}% http://ctan.org/pkg/{array,longtable,multirow}
+\usepackage{pifont}
+
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{wrapfig}

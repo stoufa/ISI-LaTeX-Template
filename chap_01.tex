@@ -1,0 +1,98 @@
+\chapter{Contexte général}
+\section*{Introduction}
+Text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text...
+
+% Une section
+
+% Exemple d'une section qui porte une référence à une bibliographie
+% NB: il faut bien suivre le syntaxe pour ne pas tomber dans le cas où il y a une référence dans la table des matières.
+\section[Organisme d'accueil]{Organisme d'accueil \cite{webArticle1}}
+
+% NB: il faut annoncer la figure dabord.
+% Pour faire appel à une figure, il suffit d'utiliser le label comme suit :
+La figure \ref{fig:logo_tt} présente le logo de la tunisie télécom. (Il est déconseiller de mettre le logo de la société dans le rapport, il est déjà présent dans la page de garde).
+
+% On peut ajouter une figure en utilisant le syntaxe suivant:
+\begin{figure}[htpb]
+\centering
+\frame{\includegraphics[width=0.5\columnwidth]{Logo_Entreprise}}
+\caption{Logo Entreprise}
+\label{fig:logo_tt}
+\end{figure}
+
+\section{\'Etude et critique de l'éxistant}
+
+\section{Problématique}
+
+\section{\'Etude bibliographique (sur un thème précis)}
+
+%On peut ajouter un tableau en utilisant le syntaxe suivant:
+%% Ce syntaxe est modifié afin de vous offrir un tableau divisible automatiquement dans les pages.
+
+Le tableau \ref{tab:myfirstlongtable} présente un exemple d'un tableau qui peut être divisé automatiquement dans les pages.
+
+\begin{longtable}[c]{
+    |p{.20\textwidth}
+    |p{.60\textwidth}|
+}
+    \caption{Tableau long}
+    \label{tab:myfirstlongtable}\\
+    \hline
+    
+    0
+    & 0 \\
+    \hline 
+    
+    1
+    & 1 \\
+    \hline 
+    
+    2
+    & 2 \\
+    \hline
+    
+    3
+    & 3 \\
+    \hline
+    
+    4
+    & 4 \\
+    \hline
+    
+    5
+    & 5 \\ \hline
+    
+    6
+    & 6 \\ \hline
+    
+    7
+    & 7 \\
+    \hline
+    
+    8
+    & 8 \\
+    \hline
+    
+    9
+    & 9 \\
+    \hline
+    
+    10
+    & 10 \\
+    \hline
+    
+    11
+    & 11 \\
+    \hline
+    
+    12
+    & 12 \\
+    \hline
+\end{longtable}
+
+\section{Solution proposée et objectifs globaux du projet}
+
+\section{Choix méthodologique}
+
+\section*{Conclusion}
+    Conclusion partielle ayant pour objectif de synthétiser le chapitre et d’annoncer le chapitre suivant.

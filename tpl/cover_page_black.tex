@@ -1,0 +1,115 @@
+
+%===== File containing the black cover of the document ====%
+%                                                          %
+% Copyright (C) ISI - All Rights Reserved                  %
+% Proprietary                                              %
+% Written by Med Hossam <med.hossam@gmail.com>, April 2016 %
+%                                                          %
+% @author: HEDHILI Med Houssemeddine                       %
+% @linkedin: http://tn.linkedin.com/in/medhossam           %
+%==========================================================%
+
+%== It's advised to not modify the content of this file ===%
+% To set your information, go to global_config.tex file    %
+%==========================================================%
+
+\thispagestyle{cover}%
+\hspace{-47pt}
+\begin{minipage}[l]{0.2\columnwidth}
+\vspace{6mm}
+\includegraphics[width=1.1\columnwidth]{Logo_ISI_Black}\\
+\end{minipage}
+\hfill
+\begin{minipage}[l]{0.6\columnwidth}
+\centering
+\footnotesize
+\textbf{{République Tunisienne}}\\
+\vspace{1.5mm}
+\textbf{{Ministère de l'Enseignement Supérieur\\
+et de la Recherche Scientifique}}\\
+\vspace{1.5mm}
+\textbf{{Université de Tunis El Manar}}\\
+\vspace{1.5mm}
+\textbf{{Institut Supérieur d'Informatique d’El Manar}}
+\end{minipage}
+\hfill
+\begin{minipage}[l]{0.02\columnwidth}
+\end{minipage}
+\hfill
+\begin{minipage}[l]{0.18\columnwidth}
+\vspace{6mm}
+\includegraphics[width=0.9\columnwidth]{Logo_UTM_Black}\\
+\end{minipage}
+\vskip1.5cm
+
+\begin{center}
+{\LARGE{\textbf{\textsc{Rapport de Projet de Fin d'\'Etudes}}}}\\
+\vskip0.5cm
+\large
+
+{\textbf{Présenté en vue de l'obtention du}}\\
+\vskip2mm
+{\textbf{\@diplomaName}}\\
+{\textbf{Spécialité : \@speciality}}\\
+{}
+\end{center}
+
+\begin{center}
+\textrm{Par}\\
+\vskip0.3cm
+{\ifthenelse{\boolean{isBinomal}}
+    {% IF TRUE
+        \begin{center}
+            \large\textbf{\@author}~~~~~ et ~~~~~
+            \large\textbf{\@secondAuthor}
+        \end{center}
+    }
+    {\Large\textbf{\@author}}% FALSE
+}
+\vskip12mm
+
+\begin{changemargin}{-9mm}{0cm}
+\begin{minipage}[l]{1.1\columnwidth}
+\begin{tcolorbox}[colback=white,boxrule=0pt,toprule=3pt,bottomrule=3pt,arc=0pt,top=0mm,right=0mm,left=0mm,bottom=0mm,boxsep=0.5mm]{
+    \begin{tcolorbox}[colback=white, boxrule=0pt,toprule=1pt,bottomrule=1pt,arc=0pt,enlarge bottom by=-0.9mm, auto outer arc]
+        \centering
+        {\huge\textbf{\@title}}
+    \end{tcolorbox}
+}
+\end{tcolorbox}
+\end{minipage}
+\end{changemargin}
+
+\end{center}
+\vskip8mm%
+
+\begin{center}
+\large
+\begin{minipage}[c]{0.28\columnwidth}
+Encadrant professionnel:\\
+Encadrant académique:
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.42\columnwidth}
+\textbf{\@proFramerName}\\
+\textbf{\@academicFramerName}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.26\columnwidth}
+\@proFramerSpeciality\\
+\@academicFramerSpeciality
+\end{minipage}
+\end{center}
+\vskip16mm
+
+\begin{center}
+\large
+Réalisé au sein de \@companyName\\
+\vskip0.4cm
+\begin{figure}[h]
+\centering
+{{\fboxrule=2.5pt\fbox{\includegraphics[width=0.4\columnwidth]{Logo_Entreprise_Black}}}}
+\end{figure}
+\end{center}
+
+\restoregeometry

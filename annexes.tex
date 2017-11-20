@@ -1,0 +1,47 @@
+\chapter*{Annexes}
+\addcontentsline{toc}{chapter}{Annexes}
+\markboth{Annexes}{}
+\stepcounter{chapter}
+\addtocontents{lot}{\vspace{3.8mm}}
+\addtocontents{lof}{\vspace{3.8mm}}
+
+%Mettez vos annexes ici...
+
+%===================== ANNEXE 1 =====================%
+\section*{Annexe 1.~Exemple d'annexe}
+\addcontentsline{toc}{section}{Annexe 1.~Exemple d'annexe}
+
+Les chapitres doivent présenter l’essentiel du travail. Certaines informations-trop  détaillées  ou constituant un complément d’information pour toute personne qui désire mieux comprendre ou refaire une expérience décrite dans le document- peuvent être mises au niveau des annexes. Les annexes, {\bf placées après la bibliographie}, doivent donc être numérotées avec des titres (Annexe1, Annexe2, etc.).
+
+\addcontentsline{lot}{table}{Annexe 1.1~~~Exemple tableau dans l'annexe}
+
+Le tableau annexe 1.1 présente un exemple d'un tableau dans l'annexe.
+
+{\raggedright \textbf{Tableau annexe 1.1:}~Exemple tableau dans l'annexe}
+\begin{longtable}[c]{
+    | p{.20\textwidth}
+    | p{.50\textwidth} |
+}
+    \hline
+        0 & 0 \\ \hline 
+        1 & 1 \\ \hline 
+        2 & 2 \\ \hline
+        3 & 3 \\ \hline
+        4 & 4 \\
+    \hline
+
+\end{longtable}
+
+\newpage
+%===================== ANNEXE 2 =====================%
+\section*{Annexe 2.~Entreprise}
+\addcontentsline{toc}{section}{Annexe 2.~Entreprise}
+
+\addcontentsline{lof}{figure}{Annexe 2.1~~~Logo d'entreprise}
+
+La figure annexe 2.1 présente le logo entreprise.
+\begin{figure}[htpb]
+    \centering
+    \frame{\includegraphics[width=0.45\columnwidth]{Logo_Entreprise}}
+    {\\\textbf{Figure annexe 2.1:} Logo d'entreprise}
+\end{figure}
