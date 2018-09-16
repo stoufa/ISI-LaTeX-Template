@@ -1,5 +1,11 @@
 # ISI-LaTeX-Template
-ISI LaTeX template for writing internship reports - Template LaTeX pour les rapports de stage ISI
+:us: ISI's LaTeX template for internship reports (End-of-studies internships and Summer internships)  
+The template works perfectly online (Tested on Sharelatex.com), I added some modifications in order to make it work locally (Tested on TexMaker)
+
+------
+
+:fr: Template LaTeX pour les rapports de stage de l'ISI (Stages de fin d'études et Stages d'été)  
+Le template fonctionne parfaitement en ligne (Testé sur Sharelatex.com), j'ai ajouté quelques modifications pour le faire fonctionner localement (Testé sur TexMaker)
 ```
 %================================================================%  
 % Copyright (C) ISI - All Rights Reserved                        %  
@@ -13,8 +19,6 @@ ISI LaTeX template for writing internship reports - Template LaTeX pour les rapp
 % @linkedin: http://tn.linkedin.com/in/mustapha-sahli            %  
 %================================================================%  
 ```
-The template works perfectly online (Sharelatex), I added some modifications in order to make it work locally  
-Le template fonctionne parfaitement en ligne (Sharelatex), j'ai ajouté quelques modifications pour le faire fonctionner localement
 <p align="center">
   <img src="https://raw.githubusercontent.com/stoufa/ISI-LaTeX-Template/master/cover_page_screenshot.PNG" alt="Cover Page Screenshot"/>
 </p>
